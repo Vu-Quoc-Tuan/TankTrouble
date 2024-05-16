@@ -34,6 +34,24 @@
 #### 4. Các chế độ game
 * **Chế độ đơn- Single player:**
   
+  <img width="676" alt="Screenshot 2024-05-16 120859" src="https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/ddb56fd9-65f0-4d8d-b11d-43cb464a34b9">
+
+
+
+
+## *Ngưỡng điểm mong muốn :*
+### *Các kĩ thuật cơ bản:*
+*  Sử dụng hình ảnh, âm thanh, text, hiệu ứng vụ nổ.
+*  Tạo TileMap và xử lý va chạm
+*  Xử lý các thao tác từ bàn phím, chuột
+*  Tạo menu, end game , pause, bật tắt âm thanh
+*  Sử dụng các công thức toán cơ bản để bắn đạn và di chuyển
+  
+### *Các kĩ thuật nâng cao:*  
+* Làm đạn nảy lại khi đập tường
+* Sử dụng thuật toán BFS để tìm đường ngắn nhất đông thời dùng các công thức toán để di chuyển viên đạn
+* Có dùng lập trình hướng đối tượng
+* Tối giản phần main.cpp
 
 
 
