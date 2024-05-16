@@ -53,7 +53,7 @@ void BulletObject::through_wall()
 
 void BulletObject::find_anyone(const Map& map_data, int targetX, int targetY)
 {
-    if(std::sqrt((targetX-rect_.x)*(targetX-rect_.x)+(targetY-rect_.y)*(targetY-rect_.y))>=300) return;
+    if(std::sqrt((targetX-rect_.x)*(targetX-rect_.x)+(targetY-rect_.y)*(targetY-rect_.y))>=200) return;
 
     path.clear();
 
