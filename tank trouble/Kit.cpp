@@ -27,16 +27,20 @@ void item::set_type()
     type=rand()%3;
 }
 
-void item::set_distination(const Map& map_data)
-{
-    bool check=false;
-        srand(time(NULL));
-        int tempx=rand()%706+80;
-        int tempy=rand()%601+35;
+void item::set_distination(const Map& map_data) {
+    bool position_found = false;
+    while (!position_found) {
+        int tempx = rand() % 691 + 95;
+        int tempy = rand() % 591 + 50;
 
-            rect_.x=tempx;
-            rect_.y=tempy;
-
+        int tile_x = tempx / TILE_SIZE;
+        int tile_y = tempy / TILE_SIZE;
+        if (map_data.tile[tile_y][tile_x] != 1) {
+            rect_.x = tempx;
+            rect_.y = tempy;
+            position_found = true;
+        }
+    }
 }
 
 void item::show_item(SDL_Renderer* screen)

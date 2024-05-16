@@ -50,7 +50,7 @@ void BulletObject::through_wall()
     rect_.y+=cos(radians)*BULLET_SPEED;
 }
 
-//đang
+
 void BulletObject::find_anyone(const Map& map_data, int targetX, int targetY)
 {
     if(std::sqrt((targetX-rect_.x)*(targetX-rect_.x)+(targetY-rect_.y)*(targetY-rect_.y))>=300) return;
@@ -104,6 +104,7 @@ void BulletObject::movent(const Map& map_data, int targetX, int targetY)
     getAngle(map_data, targetX, targetY);
 
     angle_bullet=angle_bullet+angle_change;
+    angle_change=0;
     float radians = angle_bullet*PI/180;
 
     rect_.x -= sin(radians) * speed;

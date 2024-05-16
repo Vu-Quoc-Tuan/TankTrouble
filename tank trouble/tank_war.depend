@@ -125,7 +125,7 @@
 	"Sound.h"
 	"Explosion.h"
 
-1715079935 f:\game\tesst\tank_war\settings.h
+1715869277 f:\game\tesst\tank_war\settings.h
 	<iostream>
 	<vector>
 	<string>
@@ -191,10 +191,10 @@
 1714803048 source:f:\game\tesst\tank_war\main.cpp
 	"Game.h"
 
-1715530950 f:\game\tesst\tank_war\game.h
+1715845594 f:\game\tesst\tank_war\game.h
 	"Compact.h"
 
-1714750362 source:f:\game\tesst\tank_war\map.cpp
+1715867293 source:f:\game\tesst\tank_war\map.cpp
 	"Map.h"
 
 1715087163 source:f:\game\tesst\tank_war\sound.cpp
@@ -209,13 +209,13 @@
 1714377068 source:f:\game\tesst\tank_war\timer.cpp
 	"Timer.h"
 
-1715792448 source:f:\game\tesst\tank_war\bullet.cpp
+1715868006 source:f:\game\tesst\tank_war\bullet.cpp
 	"Bullet.h"
 
-1715792237 source:f:\game\tesst\tank_war\game.cpp
+1715868183 source:f:\game\tesst\tank_war\game.cpp
 	"Game.h"
 
-1715748711 source:f:\game\tesst\tank_war\kit.cpp
+1715868007 source:f:\game\tesst\tank_war\kit.cpp
 	"Kit.h"
 
 1715765547 source:f:\game\tesst\tank_war\player.cpp

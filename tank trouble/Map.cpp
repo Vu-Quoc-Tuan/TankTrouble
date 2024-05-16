@@ -4,9 +4,9 @@ void MapObject::load_map(int map_type)
 {
     std::ifstream file;
 
-    if(map_type==2){
-        file.open("Map/map02.txt");
-        game_map_.file_name_="Map/map02.txt";
+    if(map_type==1){
+        file.open("Map/map1.txt");
+        game_map_.file_name_="Map/map1.txt";
     } else {
         file.open("Map/map01.txt");
         game_map_.file_name_="Map/map01.txt";

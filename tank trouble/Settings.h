@@ -18,7 +18,7 @@
 // game setting
 const int SCREEN_WIDTH =900;
 const int SCREEN_HEIGHT = 700;
-#define WINDOW_TITLE  "Tank War"
+#define WINDOW_TITLE  "Tank Trouble"
 const int FPS = 60;
 #define TILE_SIZE 15
 

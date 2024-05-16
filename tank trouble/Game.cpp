@@ -68,6 +68,11 @@ void Game::set_render(SDL_Renderer* screen)
 //score
     g_text[4].Loadtext("HIGH SCORE!",renderer,Font3);
 
+// black hold
+    hole[0].Loadimage_base("Image/kit/hole1.png",renderer);
+    hole[0].set_rect(100,244);
+    hole[1].Loadimage_base("Image/kit/hole2.png",renderer);
+    hole[1].set_rect(700,210);
 }
 
 
@@ -399,7 +404,7 @@ OPTION Game::Play_single()
 
     g_player.set_player2(false);
 
-    game_map.load_map(1);
+    game_map.load_map(rand() %2);
     game_map.load_title(renderer);
     Map map_data= game_map.get_datamap();
 
@@ -466,12 +471,12 @@ OPTION Game::Play_single()
         }
         down_hp();
         itemspawn++;
-        if(itemspawn>50 && list_item.size()<=5)
+        if(itemspawn>100 && list_item.size()<=3)
         {
             list_item.push_back(spawn_item());
             itemspawn=0;
         }
-
+        flash();
 
         SDL_RenderClear(renderer);
         SDL_SetRenderDrawColor(renderer,255,255,255,255);
@@ -486,6 +491,9 @@ OPTION Game::Play_single()
         load_item  (map_data);
         upgrade();
         delete_threat();
+
+        hole[0].render(renderer);
+        hole[1].render(renderer);
 
         g_player.draw_bullet(renderer,map_data);
         g_player.Show(renderer);
@@ -521,7 +529,7 @@ OPTION Game::Play_mutile()
 
     g_player.set_player2(true);
 
-    game_map.load_map(1);
+    game_map.load_map(rand() %2);
     game_map.load_title(renderer);
     Map map_data= game_map.get_datamap();
 
@@ -587,12 +595,12 @@ OPTION Game::Play_mutile()
         }
 
         itemspawn++;
-        if(itemspawn>100 && list_item.size()<=3)
+        if(itemspawn>150 && list_item.size()<=3)
         {
             list_item.push_back(spawn_item());
             itemspawn=0;
         }
-
+        flash();
 
         SDL_RenderClear(renderer);
         SDL_SetRenderDrawColor(renderer,255,255,255,255);
@@ -602,13 +610,17 @@ OPTION Game::Play_mutile()
 
         load_item(map_data);
         upgrade();
+        hole[0].render(renderer);
+        hole[1].render(renderer);
 
         g_player.draw_bullet(renderer,map_data);
         g_player.Show(renderer);
 
         g_text[1].render_text(80,647,renderer);
         g_text[2].render_text(782,647,renderer);
+
         g_button[13].render(renderer);
+
         if(armor1) armor_tank[1].render(renderer);
         if(armor2) armor_tank[0].render(renderer);
 
@@ -652,6 +664,9 @@ void Game::Reset_game()
 
     g_player.set_rect_player1(138,75);
     g_player.set_rect_player2(735,585);
+
+    is_flash1=false;
+    is_flash2=false;
 
     armor1=false;
     armor2=false;
@@ -793,7 +808,7 @@ void Game::delete_threat()
 
 void Game::down_hp()
 {
-    for(int i=0;i<list_threat.size();i++)
+    for(int i=0;i<(int)list_threat.size();i++)
     {
         Threat_object temp= list_threat.at(i);
         if(detail::check_insize(temp.get_rect_threat(),g_player.get_rect_player1()))
@@ -922,5 +937,35 @@ void Game::get_point_multiple()
             g_player.delete_bullet(i,2);
             list2.erase(list2.begin() + i);
         }else i++;
+    }
+}
+
+void Game::flash()
+{
+    if(detail::check_collision(hole[0].get_rect_(),g_player.get_rect_player1())&& !is_flash1)
+    {
+        is_flash1=true;
+        g_player.set_rect_player1(hole[1].get_rect_().x,hole[1].get_rect_().y);
+    }
+    else if(detail::check_collision(hole[1].get_rect_(),g_player.get_rect_player1())&& !is_flash1)
+    {
+        is_flash1=true;
+        g_player.set_rect_player1(hole[0].get_rect_().x,hole[0].get_rect_().y);
+    }else{
+        //is_flash1=false;
+    }
+
+
+    if(detail::check_collision(hole[0].get_rect_(),g_player.get_rect_player2())&& !is_flash2)
+    {
+        is_flash2=true;
+        g_player.set_rect_player2(hole[1].get_rect_().x,hole[1].get_rect_().y);
+    }
+    else if(detail::check_collision(hole[1].get_rect_(),g_player.get_rect_player2())&& !is_flash2)
+    {
+        is_flash2=true;
+        g_player.set_rect_player2(hole[0].get_rect_().x,hole[0].get_rect_().y);
+    }else{
+        //is_flash2=false;
     }
 }

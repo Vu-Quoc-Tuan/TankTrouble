@@ -64,6 +64,12 @@ private:
     //Explosion
     Explosion bomb;
 
+    //Black hole
+    Graphics hole[3];
+    void flash();
+    bool is_flash1;
+    bool is_flash2;
+
     //method
     OPTION Play_single();
     OPTION Play_mutile();
