@@ -1,0 +1,230 @@
+# depslib dependency file v1.0
+1714803048 source:f:\coding\test\tank_war\main.cpp
+	"Game.h"
+
+1715079935 f:\coding\test\tank_war\settings.h
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<math.h>
+	<algorithm>
+	<cstdlib>
+	<ctime>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<windows.h>
+
+1715079823 f:\coding\test\tank_war\graphics.h
+	"Settings.h"
+
+1714969894 source:f:\coding\test\tank_war\graphics.cpp
+	"Graphics.h"
+
+1714750362 source:f:\coding\test\tank_war\map.cpp
+	"Map.h"
+
+1714809975 source:f:\coding\test\tank_war\compact.cpp
+	"Compact.h"
+
+1715136279 f:\coding\test\tank_war\compact.h
+	"Settings.h"
+	"Graphics.h"
+	"Map.h"
+	"Player.h"
+	"Threat.h"
+	"Kit.h"
+	"Timer.h"
+	"Text.h"
+	"Sound.h"
+
+1714750381 f:\coding\test\tank_war\map.h
+	"Settings.h"
+	"Graphics.h"
+
+1715145177 f:\coding\test\tank_war\player.h
+	"Graphics.h"
+	"Map.h"
+	"Bullet.h"
+	"Sound.h"
+
+1715140766 source:f:\coding\test\tank_war\player.cpp
+	"Player.h"
+
+1715137184 source:f:\coding\test\tank_war\extend.cpp
+	"Extend.h"
+
+1715145522 f:\coding\test\tank_war\extend.h
+	"Settings.h"
+
+1715140696 source:f:\coding\test\tank_war\bullet.cpp
+	"Bullet.h"
+
+1715088732 f:\coding\test\tank_war\bullet.h
+	"Graphics.h"
+	"Map.h"
+	"Extend.h"
+	<chrono>
+	<queue>
+	"Sound.h"
+
+1713249250 f:\coding\test\tank_war\threat.h
+	"Graphics.h"
+	"Settings.h"
+
+1715007526 source:f:\coding\test\tank_war\threat.cpp
+	"Threat.h"
+
+1715140731 source:f:\coding\test\tank_war\kit.cpp
+	"Kit.h"
+
+1714022458 f:\coding\test\tank_war\kit.h
+	"Settings.h"
+	"Graphics.h"
+	"Map.h"
+	"Extend.h"
+
+1715087163 source:f:\coding\test\tank_war\sound.cpp
+	"Sound.h"
+
+1715136474 f:\coding\test\tank_war\sound.h
+	"Settings.h"
+
+1714792111 source:f:\coding\test\tank_war\text.cpp
+	"Text.h"
+
+1714577305 f:\coding\test\tank_war\text.h
+	"Settings.h"
+
+1714377068 source:f:\coding\test\tank_war\timer.cpp
+	"Timer.h"
+
+1714377068 f:\coding\test\tank_war\timer.h
+	"Settings.h"
+
+1715145126 source:f:\coding\test\tank_war\game.cpp
+	"Game.h"
+
+1715140450 f:\coding\test\tank_war\game.h
+	"Compact.h"
+
+1715246943 source:f:\game\tesst\tank_war\compact.cpp
+	"Compact.h"
+
+1715260939 f:\game\tesst\tank_war\compact.h
+	"Settings.h"
+	"Graphics.h"
+	"Map.h"
+	"Player.h"
+	"Threat.h"
+	"Kit.h"
+	"Timer.h"
+	"Text.h"
+	"Sound.h"
+	"Explosion.h"
+
+1715079935 f:\game\tesst\tank_war\settings.h
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<math.h>
+	<algorithm>
+	<cstdlib>
+	<ctime>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<windows.h>
+
+1715079823 f:\game\tesst\tank_war\graphics.h
+	"Settings.h"
+
+1715415517 f:\game\tesst\tank_war\map.h
+	"Settings.h"
+	"Graphics.h"
+
+1715612559 f:\game\tesst\tank_war\player.h
+	"Graphics.h"
+	"Map.h"
+	"Bullet.h"
+	"Sound.h"
+
+1715788886 f:\game\tesst\tank_war\bullet.h
+	"Graphics.h"
+	"Map.h"
+	"Extend.h"
+	<chrono>
+	<queue>
+	"Sound.h"
+
+1715790391 f:\game\tesst\tank_war\extend.h
+	"Settings.h"
+
+1715156931 f:\game\tesst\tank_war\sound.h
+	"Settings.h"
+
+1715701806 f:\game\tesst\tank_war\threat.h
+	"Settings.h"
+
+1714022458 f:\game\tesst\tank_war\kit.h
+	"Settings.h"
+	"Graphics.h"
+	"Map.h"
+	"Extend.h"
+
+1714377068 f:\game\tesst\tank_war\timer.h
+	"Settings.h"
+
+1714577305 f:\game\tesst\tank_war\text.h
+	"Settings.h"
+
+1715790391 source:f:\game\tesst\tank_war\extend.cpp
+	"Extend.h"
+
+1715612801 source:f:\game\tesst\tank_war\graphics.cpp
+	"Graphics.h"
+
+1714803048 source:f:\game\tesst\tank_war\main.cpp
+	"Game.h"
+
+1715530950 f:\game\tesst\tank_war\game.h
+	"Compact.h"
+
+1714750362 source:f:\game\tesst\tank_war\map.cpp
+	"Map.h"
+
+1715087163 source:f:\game\tesst\tank_war\sound.cpp
+	"Sound.h"
+
+1715693932 source:f:\game\tesst\tank_war\text.cpp
+	"Text.h"
+
+1715701874 source:f:\game\tesst\tank_war\threat.cpp
+	"Threat.h"
+
+1714377068 source:f:\game\tesst\tank_war\timer.cpp
+	"Timer.h"
+
+1715792448 source:f:\game\tesst\tank_war\bullet.cpp
+	"Bullet.h"
+
+1715792237 source:f:\game\tesst\tank_war\game.cpp
+	"Game.h"
+
+1715748711 source:f:\game\tesst\tank_war\kit.cpp
+	"Kit.h"
+
+1715765547 source:f:\game\tesst\tank_war\player.cpp
+	"Player.h"
+
+1715262726 source:f:\game\tesst\tank_war\explosion.cpp
+	"Explosion.h"
+
+1715262726 f:\game\tesst\tank_war\explosion.h
+	"Settings.h"
+	"Graphics.h"
+
