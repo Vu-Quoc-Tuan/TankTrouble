@@ -29,23 +29,32 @@
 
 *  **laser** ![Laser](https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/7cbec12a-010e-44f3-a1b9-2b8e077e6847) giúp người chơi bắn ra laser ![lazer](https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/66eca54d-06db-4e9c-87cb-2025dfa3508c) đi xuyên qua tường.
 
+*  **black hole** ![hole1](https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/01517213-8228-429e-acd6-d196e4ae8168) giúp người chơi dịch chuyển.
 
 
 #### 4. Các chế độ game
 * **Chế độ đơn- Single player:**
   
-  <img width="676" alt="Screenshot 2024-05-16 120859" src="https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/ddb56fd9-65f0-4d8d-b11d-43cb464a34b9">
+  <img width="674" alt="Screenshot 2024-05-16 210402" src="https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/48a59f79-b14b-434e-8295-f4a1f2103da3">
+  
+  <img width="674" alt="Screenshot 2024-05-16 210333" src="https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/2284ac72-8982-4786-84a9-9d32c3782f9e">
+
+* **Chế độ đối kháng- Multiple player:**
+  
+  <img width="673" alt="Screenshot 2024-05-16 210636" src="https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/099afa55-a519-4a25-94ba-64cff714a400">
+
+  <img width="674" alt="Screenshot 2024-05-16 211943" src="https://github.com/Vu-Quoc-Tuan/TankTrouble/assets/158484347/c1db67b6-a6e1-4fc8-a3fd-bf015f8e620c">
 
 
 
-
-## *Ngưỡng điểm mong muốn :*
+## *Ngưỡng điểm mong muốn 9-10:*
 ### *Các kĩ thuật cơ bản:*
 *  Sử dụng hình ảnh, âm thanh, text, hiệu ứng vụ nổ.
 *  Tạo TileMap và xử lý va chạm
 *  Xử lý các thao tác từ bàn phím, chuột
 *  Tạo menu, end game , pause, bật tắt âm thanh
 *  Sử dụng các công thức toán cơ bản để bắn đạn và di chuyển
+*  Có lưu lại điểm cao nhất
   
 ### *Các kĩ thuật nâng cao:*  
 * Làm đạn nảy lại khi đập tường
