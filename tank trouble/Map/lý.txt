@@ -1,0 +1,20 @@
+điện trường  trường của điện tích điện, hệ điện tích điện, vật mang điện ( thanh day dẫn, điện trường tại 1 điểm, quấn thành vòng , các tâm)
+=> chia xong tính tích phân từng phần
+mặt phẳng vô hạn=> ô g học thuộc công thức đấy
+- tính F,E,công, điện thế, hiệu điện thế, năng lượng. áp dung trong trường hợp bay vào trong điện trường làm thay đổi độ lớn
+
+
+
+từ trường
+chiều B=> nắm bàn tay phải
+
+day dẫn 2 đặt trong vùng có có từ trường =>lực ampe=>phương , chiều, độ lớn=>bàn tay trái
+hạt => lực loéno=>ko lm thay ổi ọ lớn, lm thayổi quỹ đạo
+
+Từ trường: H,B trong các trường hợp đoạn day, day dẫn thẳng dài vô hạn, hình tam giác vòng tronf; định luật ampe, bolo, trong dòng toanf phần=>quấn thành n vòng day: tính h tại các điểm bên trong, bên ngoài; chứng minh 2 day dẫy sng song thẳng dài vô hạn có dòng điện hút hay đẩy nhau=> xác ịnh chiều B1 do i1 gây ra, xác ịnh chiều chủa F, xác ddinjhj độ lớn cuar nó
+
+
+giao thoa:
+tt+ nen thủy tinh=> - lMDA/2
+nêm kk=> cộng lmda/2
+ làm đến bước cuối cùng

@@ -53,7 +53,7 @@ void BulletObject::through_wall()
 
 void BulletObject::find_anyone(const Map& map_data, int targetX, int targetY)
 {
-    if(std::sqrt((targetX-rect_.x)*(targetX-rect_.x)+(targetY-rect_.y)*(targetY-rect_.y))>=200) return;
+    if(std::sqrt((targetX-rect_.x)*(targetX-rect_.x)+(targetY-rect_.y)*(targetY-rect_.y))>=300) return;
 
     path.clear();
 
@@ -77,7 +77,7 @@ void BulletObject::find_anyone(const Map& map_data, int targetX, int targetY)
 
             if (i1 >= tile_startY && i1 < tile_endY && j1 >= tile_startX && j1 < tile_endX) {
                 if (map_data.tile[i1][j1] == 0 &&!visited[i1][j1]) {
-                    parent[i1][j1] = std::make_pair(top.first, top.second);
+                    parent[i1][j1] = std::make_pair(top.first, top.second);visited[i1][j1]=true;
                     wait.push({i1, j1});
                 }
             }
@@ -98,13 +98,13 @@ void BulletObject::find_anyone(const Map& map_data, int targetX, int targetY)
 void BulletObject::movent(const Map& map_data, int targetX, int targetY)
 {
     life_rocket++;
-    if(life_rocket==100) is_move=false;
+    if(life_rocket==200) is_move=false;
 
     float speed = 0.8 * BULLET_SPEED;
     getAngle(map_data, targetX, targetY);
 
     angle_bullet=angle_bullet+angle_change;
-    angle_change=0;
+    //angle_change=0;
     float radians = angle_bullet*PI/180;
 
     rect_.x -= sin(radians) * speed;
