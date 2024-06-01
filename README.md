@@ -47,7 +47,7 @@
 
 
 
-## *Ngưỡng điểm mong muốn 9-10:*
+## *Ngưỡng điểm mong muốn 8,5-9,5:*
 ### *Các kĩ thuật cơ bản:*
 *  Sử dụng hình ảnh, âm thanh, text, hiệu ứng vụ nổ.
 *  Tạo TileMap và xử lý va chạm
